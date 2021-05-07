@@ -1,0 +1,38 @@
+.content {
+  overflow: hidden;
+  width: 100vw;
+  height: 300vh;
+  background-color: black;
+  .waterfall {
+    width: 120vw;
+    position: relative;
+    top: -12%;
+    transform: rotate(-5deg) scale(1.2);
+    background-color: black;
+
+    .imgBox {
+      position: absolute;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: black;
+
+      filter: brightness(70%);
+
+      img {
+        transition: all .5s;
+        height: 100%;
+        width: 100%;
+      }
+
+      &:hover {
+        filter: brightness(100%);
+
+        img {
+          transform: scale(1.1) rotate(3deg);
+        }
+      }
+
+    }
+  }
+
+}
